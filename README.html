@@ -1,22 +1,19 @@
-django-project
+#django-project
 
-mkdir python_scripts
 mkdir python-django
-ls -l
-python3 --version
-python3 -version
 python3.6 --version
 pip install --upgrade pip
-pip3 install --upgrade
-ls -l
 cd python-django/
 python3.6 -m venv myvirtualenv
 ls -l
 cd myvirtualenv/
-ls -l
+pip install --upgrade pip
+
+cd myvirtualenv/bin/
+. activate
 cd ..
-pip install --upgrade pip
-cd myvirtualenv/
-pip install --upgrade pip
-pip install django~=1.10.0
+cd dashboard_project/
+python3.6 manage.py migrate
+python3.6 manage.py runserver
+
 
